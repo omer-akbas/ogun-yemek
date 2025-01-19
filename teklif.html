@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teklif Alın - Öğün Yemek</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">ÖĞÜN<span class="accent">YEMEK</span></span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Anasayfa</a>
+                <a href="kurumsal.html">Kurumsal</a>
+                <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                <a href="yemeklerimiz.html">Yemeklerimiz</a>
+                <a href="referanslar.html">Referanslarımız</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="teklif.html" class="teklif-btn active">Teklif Alın</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sayfa Başlığı -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Teklif Alın</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Size özel çözümler için teklif formumuzu doldurun</p>
+        </div>
+    </section>
+
+    <!-- Teklif Formu Bölümü -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-grid">
+                <!-- Teklif Formu -->
+                <div class="quote-form" data-aos="fade-right">
+                    <form id="quoteForm">
+                        <h2>Teklif Formu</h2>
+                        
+                        <div class="form-group">
+                            <label for="company">Firma/Kurum Adı</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Yetkili Adı Soyadı</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Ünvan</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Adres</label>
+                            <textarea id="address" name="address" rows="2" required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Hizmet Türü</label>
+                                <select id="service-type" name="service-type" required>
+                                    <option value="">Seçiniz</option>
+                                    <option value="tabldot">Tabldot Yemek</option>
+                                    <option value="catering">Catering Hizmeti</option>
+                                    <option value="organization">Organizasyon</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="person-count">Kişi Sayısı</label>
+                                <input type="number" id="person-count" name="person-count" min="1" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="details">Detaylı Bilgi</label>
+                            <textarea id="details" name="details" rows="4" placeholder="Özel isteklerinizi belirtebilirsiniz..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Teklif İste</button>
+                    </form>
+                </div>
+
+                <!-- Bilgi Kartı -->
+                <div class="quote-info" data-aos="fade-left">
+                    <div class="info-box">
+                        <img src="https://images.pexels.com/photos/5916475/pexels-photo-5916475.jpeg" alt="Profesyonel Hizmet">
+                        <h3>Neden Bizi Seçmelisiniz?</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> 20 yıllık sektör tecrübesi</li>
+                            <li><i class="fas fa-check-circle"></i> Profesyonel ekip ve ekipman</li>
+                            <li><i class="fas fa-check-circle"></i> Hijyenik üretim tesisleri</li>
+                            <li><i class="fas fa-check-circle"></i> Kalite belgeleri</li>
+                            <li><i class="fas fa-check-circle"></i> Uygun fiyat garantisi</li>
+                        </ul>
+                        <div class="contact-box">
+                            <h4>Hızlı İletişim</h4>
+                            <p><i class="fas fa-phone"></i> 0462 746 24 60</p>
+                            <p><i class="fas fa-envelope"></i> info@ogunyemek.com.tr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>İletişim Bilgileri</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Çarsı Mah. Dereyukarı Madensuyu Küme Evleri No:59/A Sürmene/TRABZON</p>
+                    <p><i class="fas fa-phone"></i> 0462 746 24 60</p>
+                    <p><i class="fas fa-mobile-alt"></i> 0532 242 91 24</p>
+                    <p><i class="fas fa-envelope"></i> info@ogunyemek.com.tr</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Hızlı Erişim</h3>
+                    <a href="kurumsal.html">Kurumsal</a>
+                    <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    <a href="referanslar.html">Referanslarımız</a>
+                    <a href="iletisim.html">İletişim</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Öğün Yemek. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

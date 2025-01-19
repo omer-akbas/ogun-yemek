@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğün Yemek - Toplu Yemek & Catering Hizmetleri</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">ÖĞÜN<span class="accent">YEMEK</span></span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Anasayfa</a>
+                <a href="kurumsal.html">Kurumsal</a>
+                <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                <a href="yemeklerimiz.html">Yemeklerimiz</a>
+                <a href="referanslar.html">Referanslarımız</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="teklif.html" class="teklif-btn">Teklif Alın</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/slider/slide1.jpg" class="d-block w-100" alt="Profesyonel Aşçılarımız">
+                    <div class="carousel-caption">
+                        <h2 data-aos="fade-up">Profesyonel Ekip</h2>
+                        <p data-aos="fade-up" data-aos-delay="100">Uzman aşçılarımızla kaliteli hizmet</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="assets/images/slider/slide2.jpg" class="d-block w-100" alt="Lezzetli Yemekler">
+                    <div class="carousel-caption">
+                        <h2 data-aos="fade-up">Lezzetli Menüler</h2>
+                        <p data-aos="fade-up" data-aos-delay="100">Özenle hazırlanan özel tarifler</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="assets/images/slider/slide3.jpg" class="d-block w-100" alt="Catering Hizmetleri">
+                    <div class="carousel-caption">
+                        <h2 data-aos="fade-up">Catering Hizmetleri</h2>
+                        <p data-aos="fade-up" data-aos-delay="100">Özel günleriniz için profesyonel çözümler</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="assets/images/slider/slide4.jpg" class="d-block w-100" alt="Modern Mutfak">
+                    <div class="carousel-caption">
+                        <h2 data-aos="fade-up">Modern Mutfak</h2>
+                        <p data-aos="fade-up" data-aos-delay="100">Hijyenik ortamda hazırlanan yemekler</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="assets/images/slider/slide5.jpg" class="d-block w-100" alt="Toplu Yemek">
+                    <div class="carousel-caption">
+                        <h2 data-aos="fade-up">Kurumsal Hizmet</h2>
+                        <p data-aos="fade-up" data-aos-delay="100">İşletmenize özel menü çözümleri</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="hero-content">
+            <a href="teklif.html" class="cta-button" data-aos="fade-up" data-aos-delay="200">Teklif Alın</a>
+        </div>
+    </section>
+
+    <!-- Hizmetler Özet -->
+    <section class="services-summary">
+        <div class="container">
+            <h2 data-aos="fade-up">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Toplu Yemek</h3>
+                    <p>Fabrika, hastane ve okullara özel toplu yemek çözümleri</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Catering</h3>
+                    <p>Özel organizasyonlar için profesyonel catering hizmeti</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-broom"></i>
+                    <h3>Temizlik</h3>
+                    <p>Profesyonel temizlik ve hijyen hizmetleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neden Biz Bölümü -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Neden Öğün Yemek?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-medal"></i>
+                    <h3>20 Yıllık Tecrübe</h3>
+                    <p>Sektörde 20 yılı aşkın tecrübemizle profesyonel hizmet sunuyoruz.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-heart"></i>
+                    <h3>Sağlıklı Menüler</h3>
+                    <p>Diyetisyen kontrolünde hazırlanan sağlıklı ve dengeli menüler.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-clock"></i>
+                    <h3>Zamanında Teslimat</h3>
+                    <p>Tam zamanında ve sıcak yemek servisi garantisi.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Hijyen Standartları</h3>
+                    <p>ISO ve HACCP belgeli mutfaklarımızda hijyenik üretim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İstatistikler Bölümü -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <i class="fas fa-users"></i>
+                    <h3>50.000+</h3>
+                    <p>Günlük Yemek Kapasitesi</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-building"></i>
+                    <h3>100+</h3>
+                    <p>Kurumsal Müşteri</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-utensils"></i>
+                    <h3>1000+</h3>
+                    <p>Farklı Yemek Çeşidi</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-trophy"></i>
+                    <h3>20+</h3>
+                    <p>Yıllık Tecrübe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmet Süreçleri -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Hizmet Sürecimiz</h2>
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-right">
+                    <div class="process-number">1</div>
+                    <h3>Menü Planlaması</h3>
+                    <p>Uzman diyetisyenlerimiz tarafından aylık menüler hazırlanır.</p>
+                </div>
+                <div class="process-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <h3>Taze Malzemeler</h3>
+                    <p>Günlük taze malzemeler tedarik edilir ve kontrolden geçirilir.</p>
+                </div>
+                <div class="process-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <h3>Hijyenik Üretim</h3>
+                    <p>Modern mutfaklarımızda hijyen kurallarına uygun üretim yapılır.</p>
+                </div>
+                <div class="process-card" data-aos="fade-right" data-aos-delay="300">
+                    <div class="process-number">4</div>
+                    <h3>Zamanında Teslimat</h3>
+                    <p>Özel araçlarımızla sıcak yemekler zamanında teslim edilir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kalite Standartları -->
+    <section class="quality">
+        <div class="container">
+            <div class="quality-content">
+                <div class="quality-text" data-aos="fade-right">
+                    <h2>Kalite Standartlarımız</h2>
+                    <p>Öğün Yemek olarak, en yüksek kalite standartlarında hizmet sunmayı taahhüt ediyoruz.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> ISO 22000 Gıda Güvenliği Yönetim Sistemi</li>
+                        <li><i class="fas fa-check"></i> HACCP Gıda Güvenliği Sistemi</li>
+                        <li><i class="fas fa-check"></i> ISO 9001 Kalite Yönetim Sistemi</li>
+                        <li><i class="fas fa-check"></i> Düzenli Personel Hijyen Eğitimleri</li>
+                    </ul>
+                    <a href="kurumsal.html" class="btn-secondary">Daha Fazla Bilgi</a>
+                </div>
+                <div class="quality-image" data-aos="fade-left">
+                    <img src="assets/images/quality.jpg" alt="Kalite Standartları">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Müşteri Yorumları -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Müşterilerimiz Ne Diyor?</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Öğün Yemek ile çalışmaya başladığımızdan beri çalışanlarımızın memnuniyeti arttı. Profesyonel hizmet anlayışları ve lezzetli yemekleri için teşekkür ederiz."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Ahmet Yılmaz</h4>
+                        <p>İnsan Kaynakları Müdürü</p>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Hijyen standartları ve yemek kalitesi konusunda çok titizler. Hastane olarak böyle bir hizmet almak bizi çok memnun ediyor."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Dr. Ayşe Kaya</h4>
+                        <p>Hastane Yöneticisi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>İletişim Bilgileri</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Çarsı Mah. Dereyukarı Madensuyu Küme Evleri No:59/A Sürmene/TRABZON</p>
+                    <p><i class="fas fa-phone"></i> 0462 746 24 60</p>
+                    <p><i class="fas fa-mobile-alt"></i> 0532 242 91 24</p>
+                    <p><i class="fas fa-envelope"></i> info@ogunyemek.com.tr</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Hızlı Erişim</h3>
+                    <a href="kurumsal.html">Kurumsal</a>
+                    <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    <a href="referanslar.html">Referanslarımız</a>
+                    <a href="iletisim.html">İletişim</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Öğün Yemek. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
