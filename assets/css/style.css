@@ -274,18 +274,37 @@ body {
     opacity: 1;
 }
 
-/* Mobil için carousel ayarları */
+/* Carousel Mobil Düzenlemeler */
 @media (max-width: 768px) {
-    .carousel-caption h2 {
-        font-size: 2rem;
-    }
-    
-    .carousel-caption p {
-        font-size: 1.1rem;
+    .carousel-caption {
+        bottom: 20%;
+        padding: 0 15px;
     }
 
-    .hero-content {
-        bottom: 25%;
+    .carousel-caption h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+        z-index: 5; /* Butonları öne çıkar */
+    }
+
+    .carousel-indicators {
+        bottom: 10px;
+        z-index: 5; /* Göstergeleri öne çıkar */
+    }
+
+    /* Buton ve metin çakışmasını önle */
+    .carousel-item .btn {
+        margin-bottom: 2rem;
     }
 }
 
@@ -490,7 +509,7 @@ body {
 /* Mobil için logo boyutu ayarı */
 @media (max-width: 768px) {
     .logo-text {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .header.scrolled .logo-text {
@@ -1657,44 +1676,36 @@ body {
     /* Küçük Mobil Cihazlar */
     .container {
         padding: 0 15px;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     /* Header/Navbar */
     .navbar {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 15px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0;
     }
 
     .logo-text {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
+    /* Mobil menü düzenlemeleri */
     .nav-links {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: white;
-        flex-direction: column;
-        padding: 2rem;
-        transition: 0.3s;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        left: 0;
+        padding: 1rem 15px;
     }
 
     .nav-links a {
-        width: 100%;
-        text-align: center;
-        padding: 1rem;
-        margin: 0.5rem 0;
+        margin: 0.3rem 0;
+        padding: 0.8rem;
     }
 
-    .teklif-btn {
-        width: 80%;
-        margin-top: 1rem;
+    .mobile-menu-btn {
+        padding-right: 5px;
     }
 
     /* Sayfa Başlıkları */
@@ -1736,6 +1747,20 @@ body {
     .contact-form,
     .quote-form {
         padding: 1.5rem;
+    }
+
+    /* Sayfa içeriği için güvenli alan */
+    .page-content {
+        padding: 1rem 15px;
+    }
+
+    /* Footer boşlukları */
+    .footer {
+        padding: 2rem 15px;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
     }
 }
 
@@ -1825,5 +1850,61 @@ body {
 
     .footer-info i {
         margin-right: 5px;
+    }
+}
+
+/* Genel Mobil İyileştirmeler */
+@media (max-width: 768px) {
+    /* Yazı boyutları */
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    /* Boşluklar */
+    section {
+        padding: 2rem 0;
+    }
+
+    /* Butonlar */
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Kartlar arası boşluklar */
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    /* Grid sistemleri */
+    .grid-container {
+        gap: 1rem;
+    }
+}
+
+/* Touch cihazlar için hover efektlerini düzenle */
+@media (hover: none) {
+    .nav-links a:hover::after {
+        width: 0;
+    }
+
+    .teklif-btn:hover {
+        transform: none;
+    }
+
+    .reference-card:hover {
+        transform: none;
     }
 } 
